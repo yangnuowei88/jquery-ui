@@ -98,14 +98,14 @@ test( "Localization", function() {
 			equal( element.find( ".ui-calendar-next" ).text(), "Vor>", message + "header next" );
 		};
 
-	Globalize.locale( "de-DE" );
+	Globalize.locale( "de" );
 	initCalendar();
 	testLocalization( "Init: " );
 	element.calendar( "destroy" );
 
 	Globalize.locale( defaultLocale.locale );
 	initCalendar();
-	Globalize.locale( "de-DE" );
+	Globalize.locale( "de" );
 	element.calendar( "refresh" );
 	testLocalization( "After init: " );
 
